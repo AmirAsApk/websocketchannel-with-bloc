@@ -6,6 +6,7 @@ import 'package:websocket/presenter/pages/map_page.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 void main() {
+  setupLocation();
   runApp(MultiBlocProvider(providers: [
     BlocProvider(
       create: (_) => locator<LocationBloc>(),

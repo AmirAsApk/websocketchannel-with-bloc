@@ -7,7 +7,7 @@ part 'location_event.dart';
 part 'location_state.dart';
 
 class LocationBloc extends Bloc<LocationEvent, LocationState> {
-  LocationUseCase locationUseCase;
+  WebSocketLocationUseCase locationUseCase;
 
   LocationBloc(this.locationUseCase) : super(LocationInitial()) {
     on<ConnectWebSocket>((event, emit) async {

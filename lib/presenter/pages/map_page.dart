@@ -27,7 +27,7 @@ class _MapViewState extends State<MapView> {
           onPressed: () {
             BlocProvider.of<LocationBloc>(context).add(ConnectWebSocket());
           },
-          child: Icon(Icons.not_listed_location_sharp),
+          child: const Icon(Icons.not_listed_location_sharp),
         ),
         body: BlocConsumer<LocationBloc, LocationState>(
           builder: (context, state) {
